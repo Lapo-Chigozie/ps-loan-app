@@ -1,0 +1,186 @@
+﻿.Loanchart-title {
+    width: 95%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    .Loanchart-title h2 {
+        font-weight: 700;
+        font-size: 19px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+.Loanchart-chatAcct {
+    width: 95%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.btn-btn-success {
+    background-color: #f97c00;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    border: 0px solid #f97c00;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.jumbotron p {
+    color: red !important;
+    font-size: 17px;
+}
+
+p div ul li a ol span h2 h3 h1 h2 h4 h5 h6 body html table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loan-list {
+    width: 95%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+    .loan-list div {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+        .loan-list div h2 {
+            font-weight: 700;
+            font-size: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .loan-list div table thead tr th {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 16px;
+            padding-top: 5px;
+            padding-bottom: 15px;
+        }
+
+        .loan-list div table tfoot tr th {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 16px;
+            padding-top: 15px;
+            padding-bottom: 5px;
+        }
+
+        .loan-list div table tbody tr td {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+    .loan-list .Profile-Details {
+        margin-top: 1px;
+        margin-bottom: 1px;
+        background-color: #c9c9c926;
+    }
+
+        .loan-list .Profile-Details p {
+            background-color: #fff;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+
+    .loan-list div h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ea850b;
+    }
+
+    .loan-list div .form-control-btn {
+        background-color: #f97c00;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        width: 98%;
+        border: 0px solid #f97c00;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-top: 1rem;
+        pointer-events: auto;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        white-space: nowrap;
+        border-radius: 6px;
+        cursor: pointer;
+        border: none;
+        appearance: none;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        opacity: 0.95;
+        padding: 0px;
+        background-image: linear-gradient(286deg, rgb(76, 160, 252) 23%, rgb(224, 47, 238) 76%);
+        transition: all 0.3s ease 0s;
+        position: relative;
+        padding: 10px 10px 10px 10px;
+    }

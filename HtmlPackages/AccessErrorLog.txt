@@ -1,0 +1,147 @@
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:08:30 PM
+Time: 3:08:30 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Success Token
+Class Name: E360 
+Created Date: 2/5/2024 3:08:30 PM
+Time: 3:08:30 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:11:14 PM
+Time: 3:11:14 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Success Token
+Class Name: E360 
+Created Date: 2/5/2024 3:11:14 PM
+Time: 3:11:14 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: 
+Class Name: E360 
+Created Date: 2/5/2024 3:11:15 PM
+Time: 3:11:15 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:13:10 PM
+Time: 3:13:10 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Success Token
+Class Name: E360 
+Created Date: 2/5/2024 3:13:10 PM
+Time: 3:13:10 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: 
+Class Name: E360 
+Created Date: 2/5/2024 3:13:16 PM
+Time: 3:13:16 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Success Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: The process cannot access the file 'C:\Users\LAPO\Documents\Lapo_Projects\LoanApp\LapoApp\LapoAppApi\LapoLoanWebApi\HtmlPackages\E360ApiTokenAccess.txt' because it is being used by another process.
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Success Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: 
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:06 PM
+Time: 3:17:06 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Success Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:07 PM
+Time: 3:17:07 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: The process cannot access the file 'C:\Users\LAPO\Documents\Lapo_Projects\LoanApp\LapoApp\LapoAppApi\LapoLoanWebApi\HtmlPackages\E360ApiTokenAccess.txt' because it is being used by another process.
+Class Name: E360 
+Created Date: 2/5/2024 3:17:07 PM
+Time: 3:17:07 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: 
+Class Name: E360 
+Created Date: 2/5/2024 3:17:07 PM
+Time: 3:17:07 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Start Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:25 PM
+Time: 3:17:25 PM
+
+__ __ ____ ___ __ ___ ___
+New Log
+Comment: Success Token
+Class Name: E360 
+Created Date: 2/5/2024 3:17:25 PM
+Time: 3:17:25 PM

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PS-loans</title>
+</head>
+<body>
+    <div class="email-contaneir">
+
+        <div class="bottom-contenaire">
+            <p style="color:#000000;font-size:13px;text-align:left;" class="helo-title">
+                Dear <b>{{NameReceiver}},</b>
+            </p>
+
+            <p style="color:#000000;font-size:12px;text-align:left;" class="helo-title">
+                Your loan repayment amount for the month of {{MonthReceiver}} has been received.
+            </p>
+
+            <p style="color:#000000;font-size:12px;text-align:left;" class="helo-title">
+              
+            </p>
+        </div>
+
+        <br />
+
+        <div class="bottom-contenaire">
+            <table style="border: 1px solid rgb(59, 138, 111)">
+                <tbody>
+
+                    <tr style="border: 1px solid rgb(59, 138, 111);">
+                        <td width="200" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">Repayment Amount:</span>
+                        </td>
+                        <td width="20" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">{{Re-RepaymentAmount}}</span>
+                        </td>
+                    </tr>
+
+                    <tr style="border: 1px solid rgb(59, 138, 111);">
+                        <td width="200" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">Payment for:</span>
+                        </td>
+                        <td width="20" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">{{Re-Paymentfor}}</span>
+                        </td>
+                    </tr>
+
+                    <tr style="border: 1px solid rgb(59, 138, 111);">
+                        <td width="200" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">Loan Repayment Balance:</span>
+                        </td>
+                        <td width="20" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">{{Re-LoanRepaymentBalance}}</span>
+                        </td>
+                    </tr>
+
+                    <tr style="border: 1px solid rgb(59, 138, 111);">
+                        <td width="200" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">Loan Amount:</span>
+                        </td>
+                        <td width="20" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">{{Re-LoanAmount}}</span>
+                        </td>
+                    </tr>
+
+                    <tr style="border: 1px solid rgb(59, 138, 111);">
+                        <td width="200" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">Loan Tenure:</span>
+                        </td>
+                        <td width="20" style="border: 1px solid rgb(59, 138, 111);margin-top:1px;margin-bottom:1px;margin-left:2px;margin-right:2px;">
+                            <span style="padding-left:5px;padding-right:5px;padding-top:10px;padding-bottom:10px;color:#000000;font-family:'Segoe UI';font-size:14px">{{Re-LoanTenure}}</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br />
+
+        <p style="color:#000000;font-size:12px;text-align:left;" class="helo-title">
+            Thank you for your continous co-operation
+        </p>
+
+        <p style="color:#000000;font-size:12px;text-align:left;" class="helo-title">
+            Best Regards,
+        </p>
+
+        <br />
+        <div class="img-top" style="background-color:transparent">
+            <p>
+                <img width="150" class="img-top" src="https://www.lapo-nigeria.org/img/logo/LAPO_Logo_2022.png" alt="LAPO Logo" role="img" />
+            </p>
+        </div>
+    </div>
+
+    <style type="text/css">
+
+        .bottom-contenaire table tbody tr td span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+        }
+
+        .email-contaneir {
+            width: 100%;
+        }
+
+        .img-top {
+            width: 600px;
+            background-color: #ff6a00;
+            /* Center horizontally*/
+            margin: 0 auto;
+            text-align: center;
+        }
+
+            .img-top p {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+        .bottom-contenaire {
+            width: 600px;
+            /* Center horizontally*/
+            margin: 0 auto;
+        }
+
+            .bottom-contenaire .helo-title {
+                padding-bottom: 5px;
+                padding-top: 5px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #ff6a00;
+                font-weight: 700;
+                font-size: 12px;
+            }
+
+            .bottom-contenaire .code-Display {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-top: 30px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #000000;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            .bottom-contenaire .code-Expire {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-top: 20px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #000000;
+                font-weight: 500;
+                font-size: 15px;
+            }
+
+            .bottom-contenaire .down-title {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                margin-top: 10px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: #000000;
+                font-weight: 500;
+                font-size: 15px;
+            }
+
+        .action-btn {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            margin-top: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #000000;
+            font-weight: 500;
+            font-size: 15px;
+            text-align: center;
+        }
+
+            .action-btn a {
+                padding-bottom: 15px;
+                padding-top: 15px;
+                padding-left: 50px;
+                padding-right: 50px;
+                text-decoration: none;
+                background-color: #ff6a00;
+                color: white;
+                border-radius: 30px;
+            }
+    </style>
+</body>
+</html>

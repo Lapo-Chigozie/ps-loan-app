@@ -1,0 +1,2009 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PS-loans</title>
+
+    <style type="text/css">
+        .body {
+            font-family: 'Open Sans', sans-serif !important;
+        }
+
+        * {
+            font-family: 'Open Sans', sans-serif !important;
+        }
+
+        .app-loan-preview-container {
+            width: 100%;
+        }
+
+        .app-loan-preview-row {
+            margin: auto;
+            width: 70%;
+            border: 0.9px solid hsla(120, 100%, 25%, 0.635);
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 50px;
+            height: 1370px;
+        }
+
+        .app-loan-col-left {
+            float: left;
+            width: 75%;
+        }
+
+        .app-loan-col-right {
+            float: left;
+            width: 25%;
+        }
+
+        .app-loan-row {
+            font-size: 10px;
+            text-align: center;
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+            .app-loan-row p {
+                font-size: 9px;
+                text-align: center;
+                color: #000;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+
+        .logo-and-title {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+            .logo-and-title .title {
+                font-size: 15px;
+                font-weight: 800;
+                text-align: center;
+                color: #000;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                padding-right: 20px;
+                padding-left: 50px;
+            }
+
+            .logo-and-title .logo img {
+                font-size: 15px;
+                font-weight: 800;
+                text-align: center;
+                color: #000;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+
+        .app-loan-col-right .logo {
+            margin-top: 100px;
+        }
+
+        .app-loan-row .app-loan-col-left .office-and-loantype .off-1 {
+            float: left;
+            width: 50%;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-row .app-loan-col-left .office-and-loantype .off-1 div .span-loan-type {
+                font-size: 9px;
+                font-weight: 800;
+                text-align: left;
+                color: #000;
+                padding-top: 1px;
+                padding-bottom: 5px;
+                padding-left: 1px;
+            }
+
+            .app-loan-row .app-loan-col-left .office-and-loantype .off-1 div .image-p {
+                font-size: 9px;
+                text-align: left;
+                color: #000;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                font-weight: 700;
+                float: left;
+            }
+
+                .app-loan-row .app-loan-col-left .office-and-loantype .off-1 div .image-p .empty-mark-text {
+                    font-size: 9px;
+                    text-align: left;
+                    color: #000;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-weight: 700;
+                    display: block;
+                }
+
+                .app-loan-row .app-loan-col-left .office-and-loantype .off-1 div .image-p .empty-mark {
+                    font-size: 9px;
+                    text-align: left;
+                    color: #000;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-weight: 700;
+                    display: block;
+                    border: 1px #000 solid;
+                    width: 34px;
+                    height: 22px;
+                    margin-left: 10px;
+                }
+
+        .span-loan-type-image-active {
+            background-color: #000;
+        }
+
+        .app-loan-preview-row1 {
+            margin: auto;
+            width: 97%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 110px;
+            border-radius: 10px;
+            height: 200px;
+        }
+
+        .app-loan-preview-row9 {
+            margin: auto;
+            width: 95%;
+            border: 0.0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        .app-loan-preview-row10 {
+            margin: auto;
+            width: 95%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            height: 60px;
+        }
+
+        .app-loan-preview-row11 {
+            margin: auto;
+            width: 95%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        .app-loan-preview-row12 {
+            margin: auto;
+            width: 95%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            height: 55px;
+        }
+
+        .app-loan-preview-row15 {
+            margin: auto;
+            width: 95%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            height: 20px;
+        }
+
+        .app-loan-preview-row16 {
+            margin: auto;
+            width: 95%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        .app-loan-preview-row13 {
+            margin: auto;
+            width: 95%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            height: 80px;
+        }
+
+        .app-loan-preview-row14 {
+            margin: auto;
+            width: 95%;
+            border: 0px solid hsla(120, 100%, 25%, 0.635);
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 10px;
+            height: 40px;
+        }
+
+        .app-loan-preview-row1 p {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .off-1 .off-1-p {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        .app-loan-preview-row1 div p {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .app-loan-preview-row1 .box-No {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+            .app-loan-preview-row1 .box-No p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 800;
+                text-align: left;
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-top: 5px;
+                font-size: 9px !important;
+            }
+
+            .app-loan-preview-row1 .box-No ul {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: left;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-top: 5px;
+                margin-right: 0px;
+                margin-left: 0px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+                .app-loan-preview-row1 .box-No ul li {
+                    text-align: center;
+                    display: inline-block;
+                    border: 1px solid #000;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 8px;
+                    padding: 3px 5px 3px 5px;
+                }
+
+            .app-loan-preview-row1 .box-No .box-no-p-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 700;
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 30px;
+                width: 25%;
+                float: left
+            }
+
+            .app-loan-preview-row1 .box-No .box-no-p-right {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 66%;
+                float: left;
+                margin-left: 0px;
+                padding-right: 30px;
+            }
+
+            .app-loan-preview-row1 .box-No .box-no-p-left .sp-head {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 500;
+                text-align: left;
+                font-size: 9px !important;
+            }
+
+            .app-loan-preview-row1 .box-No .box-no-p-right .sp-value {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 400;
+                text-align: center;
+                font-size: 9px !important;
+            }
+
+            .app-loan-preview-row1 .box-No .box-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 20%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 30px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .app-loan-preview-row1 .box-No .box-center {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 35%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 5px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No .box-center .box-1-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 38%;
+                    float: left;
+                }
+
+                .app-loan-preview-row1 .box-No .box-center .box-1-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 62%;
+                    float: left;
+                }
+
+            .app-loan-preview-row1 .box-No .box-left .sp-head {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                font-size: 9px !important;
+            }
+
+            .app-loan-preview-row1 .box-No .box-left .sp-value {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                font-size: 9px !important;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            .app-loan-preview-row1 .box-No .box-center .box-1-v .sp-head {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                font-size: 9px !important;
+            }
+
+            .app-loan-preview-row1 .box-No .box-center .box-1-v .sp-value {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                font-size: 9px !important;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            .app-loan-preview-row1 .box-No .box-center .box-1-v ul {
+                text-align: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No .box-center .box-1-v ul li {
+                    text-align: center;
+                    display: inline-block;
+                    border: 1px solid #000;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 8px;
+                    padding: 3px 5px 3px 5px;
+                }
+
+            .app-loan-preview-row1 .box-No .box-right {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 37%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 5px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No .box-right .box-1-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 33%;
+                    float: left;
+                }
+
+                .app-loan-preview-row1 .box-No .box-right .box-1-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: center;
+                    width: 59%;
+                    float: left;
+                    margin-left: 5px;
+                }
+
+                    .app-loan-preview-row1 .box-No .box-right .box-1-v ul {
+                        text-align: left;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        margin-left: 0px;
+                        margin-right: 0px;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+
+                        .app-loan-preview-row1 .box-No .box-right .box-1-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 9px !important;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+        .app-loan-preview-row1 .box-No-line1 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+            .app-loan-preview-row1 .box-No-line1 .box-No-line1-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 24%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 30px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-left .box-1-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 95%;
+                }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-left .box-1-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 95%;
+                }
+
+                    .app-loan-preview-row1 .box-No-line1 .box-No-line1-left .box-1-v ul {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        text-align: left;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-top: 5px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                        .app-loan-preview-row1 .box-No-line1 .box-No-line1-left .box-1-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 8px;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+            .app-loan-preview-row1 .box-No-line1 .box-No-line1-center {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 18%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 10px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-center .sp-head {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: center;
+                    width: 45%;
+                    float: left;
+                    margin-left: 1px;
+                }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-center .sp-value {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: center;
+                    width: 15%;
+                    float: left;
+                    margin-left: 1px;
+                }
+
+            .app-loan-preview-row1 .box-No-line1 .box-No-line1-right {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 24%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 30px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-right .box-1-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 95%;
+                }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-right .box-1-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 95%;
+                }
+
+                    .app-loan-preview-row1 .box-No-line1 .box-No-line1-right .box-1-v ul {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        text-align: left;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-top: 5px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                        .app-loan-preview-row1 .box-No-line1 .box-No-line1-right .box-1-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 8px;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+            .app-loan-preview-row1 .box-No-line1 .box-No-line1-center {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 18%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 10px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-center .sp-head {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: center;
+                    width: 45%;
+                    float: left;
+                    margin-left: 1px;
+                }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-center .sp-value {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: center;
+                    width: 15%;
+                    float: left;
+                    margin-left: 1px;
+                }
+
+            .app-loan-preview-row1 .box-No-line1 .box-No-line1-center-last {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 20%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 10px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-center-last .sp-head {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 70%;
+                    margin-left: 1px;
+                }
+
+                .app-loan-preview-row1 .box-No-line1 .box-No-line1-center-last .sp-value {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 25%;
+                    margin-left: 1px;
+                }
+
+
+        /* next */
+
+        .app-loan-preview-row1 .box-No-line2 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+            .app-loan-preview-row1 .box-No-line2 .box-No-line2-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 25%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 30px;
+                margin-right: 30px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row1 .box-No-line2 .box-No-line2-left .box-1-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 95%;
+                    border: 0px #000 solid;
+                }
+
+                .app-loan-preview-row1 .box-No-line2 .box-No-line2-left .box-1-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    text-align: left;
+                    width: 70%;
+                    border: 0px #000 solid;
+                }
+
+                    .app-loan-preview-row1 .box-No-line2 .box-No-line2-left .box-1-v ul {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        text-align: left;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-top: 5px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                        .app-loan-preview-row1 .box-No-line2 .box-No-line2-left .box-1-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 9px !important;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+            .app-loan-preview-row1 .box-No-line2 .box-No-line2-center {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 60%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 10px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row1 .box-No-line2 .box-No-line2-center .sp-head {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 20%;
+                    float: left;
+                    margin-left: 1px;
+                }
+
+                .app-loan-preview-row1 .box-No-line2 .box-No-line2-center .sp-value {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 20%;
+                    float: left;
+                    margin-left: 1px;
+                }
+
+
+        /* Next 9 */
+
+        .app-loan-preview-row9 .box-No-line9 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+            .app-loan-preview-row9 .box-No-line9 .box-No-line9-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 14%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row9 .box-No-line9 .box-No-line9-left .sp-head {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 400;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 10%;
+                    margin-left: 0px;
+                }
+
+                .app-loan-preview-row9 .box-No-line9 .box-No-line9-left .sp-value {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 20%;
+                    margin-left: 0px;
+                    padding-top: 5px;
+                }
+
+            .app-loan-preview-row9 .box-No-line9 .box-No-line9-left-2 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 20%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 30px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px solid #000000;
+            }
+
+                .app-loan-preview-row9 .box-No-line9 .box-No-line9-left-2 .sp-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 60%;
+                    margin-left: 0px;
+                    border: 0px solid #000000;
+                }
+
+                .app-loan-preview-row9 .box-No-line9 .box-No-line9-left-2 .sp-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 100%;
+                    margin-left: 0px;
+                    padding-top: 5px;
+                    border: 0px solid #000000;
+                }
+
+                    .app-loan-preview-row9 .box-No-line9 .box-No-line9-left-2 .sp-v ul {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        text-align: left;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-top: 5px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                        .app-loan-preview-row9 .box-No-line9 .box-No-line9-left-2 .sp-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 8px;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+
+        /* Next 10 */
+
+        .app-loan-preview-row10 .box-No-line10 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-preview-row10 .box-No-line10 .box-No-line10-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 90%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row10 .box-No-line10 .box-No-line10-left .sp-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 60%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                }
+
+                .app-loan-preview-row10 .box-No-line10 .box-No-line10-left .sp-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-top: 10px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                }
+
+
+        /* Next 10 */
+
+        .app-loan-preview-row11 .box-No-line11 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-preview-row11 .box-No-line11 .box-No-line11-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 28%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row11 .box-No-line11 .box-No-line11-left .sp-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 60%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                }
+
+                .app-loan-preview-row11 .box-No-line11 .box-No-line11-left .sp-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 100%;
+                    margin-left: 0px;
+                    margin-top: 10px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                }
+
+
+        /* Next 10 */
+
+        .app-loan-preview-row12 .box-No-line12 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-preview-row12 .box-No-line12 .box-No-line12-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 40%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row12 .box-No-line12 .box-No-line12-left .sp-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 40%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                .app-loan-preview-row12 .box-No-line12 .box-No-line12-left .sp-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 60%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                    .app-loan-preview-row12 .box-No-line12 .box-No-line12-left .sp-v ul {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        text-align: left;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                        .app-loan-preview-row12 .box-No-line12 .box-No-line12-left .sp-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 8px;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+
+        /* Next 10 */
+
+        .app-loan-preview-row13 .box-No-line13 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-preview-row13 .box-No-line13 .box-No-line13-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 16%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row13 .box-No-line13 .box-No-line13-left .sp-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 40%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                .app-loan-preview-row13 .box-No-line13 .box-No-line13-left .sp-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 60%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                    .app-loan-preview-row13 .box-No-line13 .box-No-line13-left .sp-v ul {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        text-align: left;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                        .app-loan-preview-row13 .box-No-line13 .box-No-line13-left .sp-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 8px;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+
+        /* Next 14 */
+
+        .app-loan-preview-row14 .box-No-line14 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-preview-row14 .box-No-line14 .box-No-line14-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 30%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row14 .box-No-line14 .box-No-line14-left .sp-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 40%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                .app-loan-preview-row14 .box-No-line14 .box-No-line14-left .sp-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 60%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+
+        /* Next 10 */
+
+        .app-loan-preview-row15 .box-No-line15 {
+            font-size: 9px !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-preview-row15 .box-No-line15 .box-No-line15-left {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 40%;
+                float: left;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+            }
+
+                .app-loan-preview-row15 .box-No-line15 .box-No-line15-left .sp-h {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 40%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                .app-loan-preview-row15 .box-No-line15 .box-No-line15-left .sp-v {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 60%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                    .app-loan-preview-row15 .box-No-line15 .box-No-line15-left .sp-v ul {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        text-align: left;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
+
+                        .app-loan-preview-row15 .box-No-line15 .box-No-line15-left .sp-v ul li {
+                            text-align: center;
+                            display: inline-block;
+                            border: 1px solid #000;
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            font-weight: 200;
+                            font-size: 8px;
+                            padding: 3px 5px 3px 5px;
+                        }
+
+
+        /* Next 20 */
+
+        .app-loan-preview-row16 .box-No-line16 {
+            font-weight: 700;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+            .app-loan-preview-row16 .box-No-line16 .box-No-line16-left {
+                text-align: left;
+                width: 40%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+                float: left;
+            }
+
+            .app-loan-preview-row16 .box-No-line16 .box-No-line16-right {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 600;
+                text-align: left;
+                width: 50%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 10px;
+                margin-right: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                border: 0px #000 solid;
+                float: left;
+            }
+
+                .app-loan-preview-row16 .box-No-line16 .box-No-line16-right .sp-h {
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 50%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                .app-loan-preview-row16 .box-No-line16 .box-No-line16-right .sp-v {
+                    font-size: 9px !important;
+                    text-align: left;
+                    width: 50%;
+                    margin-left: 0px;
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    border: 0px solid #000000;
+                    float: left;
+                }
+
+                .app-loan-preview-row16 .box-No-line16 .box-No-line16-right .sp-h ul {
+                    text-align: left;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    list-style: none;
+                }
+
+                    .app-loan-preview-row16 .box-No-line16 .box-No-line16-right .sp-h ul li {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 200;
+                        text-align: left;
+                        font-size: 10px;
+                        border: 0px solid #000;
+                        padding: 5px 7px 5px 7px;
+                        list-style: none;
+                    }
+
+                .app-loan-preview-row16 .box-No-line16 .box-No-line16-right .sp-v ul {
+                    text-align: left;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    margin-top: 0px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    list-style: none;
+                }
+
+                    .app-loan-preview-row16 .box-No-line16 .box-No-line16-right .sp-v ul li {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-weight: 200;
+                        text-align: left;
+                        font-size: 10px;
+                        border: 0px solid #000;
+                        padding: 5px 5px 5px 5px;
+                        list-style: none;
+                    }
+    </style>
+</head>
+<body onclick="window.print()">
+    <div class="app-loan-preview-container">
+        <div class="app-loan-preview-row">
+
+            <div  class="app-loan-row">
+                <!--<p>The element floats at the center. In-fact, now you can show anything at the center of the screen. Thanks</p>
+                <p>The element floats at the center. In-fact, now you can show anything at the center of the screen. Thanks</p>-->
+            </div>
+
+            <div  class="app-loan-row" style="height: 120px;">
+                <div class="app-loan-col-left">
+                    <div class="logo-and-title">
+                        <span class="logo">
+                            <a [routerLink]="['Home']" routerLinkActive="router-link-active">
+                                <img src="data:image/png;base64,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" width="150" />
+                            </a>
+                        </span>
+                        <span class="title">
+                            LOAN APPLICATION & AGREEMENT FORM
+                        </span>
+                    </div>
+                    <div class="office-and-loantype">
+                        <div class="off-1">
+                            <p class="off-1-p"><b>Head Office:</b> 15A, Ikorodu Express Road, MaryLand Bus Stop, Lagos State, Nigeria.</p>
+                            <p class="off-1-p"><b>Tel:</b> OfficePhoneNumber</p>
+
+                            <p class="off-1-p" style="margin-top:25px;"><b>Annex Address:</b> 18, Dawson Road, Benin City, Edo State, Nigeria.</p>
+                            <p class="off-1-p"><b>Tel:</b> OfficePhoneNumber</p>
+                        </div>
+                        <div class="off-1">
+                            <div>
+                                <p class="span-loan-type" style="margin-left:20px;">SELECTED LOAN TYPE</p>
+                            </div>
+                            <div>
+                                <p class="image-p span-loan-type-image">
+                                    <span class="empty-mark">
+                                    </span>
+                                    <span class="empty-mark-text">
+                                        NEW LOAN
+                                    </span>
+                                </p>
+                                {{topHtmlDisburse}}
+                                <p class="image-p span-loan-type-image">
+                                    <span class="empty-mark">
+                                    </span>
+                                    <span class="empty-mark-text">
+                                        RENEWAL
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-loan-col-right">
+                    <span class="logo">
+                        <a [routerLink]="['Home']" routerLinkActive="router-link-active">
+                            <img src="{{profileimage}}" width="150" />
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row1" style="height: 300px;">
+
+                <div>
+                    <p>PLEASE COMPLETE ALL SECTIONS IN CAPITAL LETTERS, NOTE All FIELDS ARE REQUIRED</p>
+                </div>
+
+                <div class="box-No">
+                    <p>BVN</p>
+
+                    <ul>
+                        {{BVN}}
+                    </ul>
+                </div>
+
+                <div class="box-No">
+                    <div class="box-no-p-left">
+                        <span class="sp-head"><b>Organization/Office Address:</b></span>
+                    </div>
+                    <div class="box-no-p-right">
+                        <span class="sp-value">{{Organization/OfficeAddress}}</span>
+
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="box-No">
+                    <p>LOAN AGREEMENT BETWEEN LAPO MFB AND </p>
+                    <ul>
+                        {{customerName}}
+                    </ul>
+                    <p style="text-align: left;">
+                        <span style="margin-left: 5%;">SUR NAME</span>
+                        <span style="margin-left: 25%;">OTHER NAME</span>
+                    </p>
+                </div>
+
+                <div class="box-No">
+                    <div class="box-left">
+                        <span class="sp-head"><b>Oracle ID:</b></span>
+                        <span class="sp-value">{{OracleID}}</span>
+                    </div>
+
+                    <div class="box-center">
+                        <div class="box-1-h">
+                            <span class="sp-head"><b>EMPLOYMENT DATE:</b></span>
+                        </div>
+                        <div class="box-1-v">
+                            <ul>
+                                {{EmpDateR}}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-right">
+                        <div class="box-1-h">
+                            <span class="sp-head"><b>RETIREMENT DATE:</b></span>
+                        </div>
+                        <div class="box-1-v">
+                            <ul>
+                                {{RetirDateR}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-No">
+                    <div class="box-no-p-left">
+                        <span class="sp-head"><b>Home Address:</b></span>
+                    </div>
+                    <div class="box-no-p-right">
+                        <span class="sp-value">{{HomeAddress}}</span>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="box-No-line1">
+                    <div class="box-No-line1-left">
+                        <div class="box-1-h">
+                            <span class="sp-head"><b>DATE OF BIRTH:</b></span>
+                        </div>
+                        <div class="box-1-v">
+                            <ul>
+                                {{{{DateOfBirth}}}}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-No-line1-center">
+                        <div class="sp-head"><b>Sex:</b></div>
+                        <div class="sp-value">{{Sex}}</div>
+                    </div>
+
+                    <div class="box-No-line1-right">
+                        <div class="box-1-h">
+                            <span class="sp-head"><b>PHONE NO:</b></span>
+                        </div>
+                        <div class="box-1-v">
+                            <ul>
+                                {{PHONENO}}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-No-line1-center-last">
+                        <div class="sp-head"><b>ALT PHONE NO:</b></div>
+                        <div class="sp-value">{{{{AltphoneNo}}}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row1" style="height: 50px; margin-top: 1px;">
+
+                <div class="box-No-line2">
+                    <div class="box-No-line2-left">
+                        <div class="box-1-h">
+                            <span class="sp-head"><b>NO OF CHILDREN:</b></span>
+                        </div>
+                        <div class="box-1-v">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-No-line2-center">
+                        <div class="sp-head"><b>Marital Status:</b></div>
+                        <div class="sp-value">
+                            <label>
+                                <span>Single</span>
+                                {{single}}
+                            </label>
+                        </div>
+                        <div class="sp-value">
+                            <label>
+                                <span>Married</span>
+                                {{marr}}
+                            </label>
+                        </div>
+                        <div class="sp-value">
+                            <label>
+                                <span>Divorced</span>
+                                {{Divorced}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row9">
+
+                <div class="box-No-line9">
+
+                    <div class="box-No-line9-left">
+                        <div class="sp-head"><b>Sex:</b></div>
+                        <div class="sp-value">{{Sex}}</div>
+                        <hr />
+                    </div>
+
+                    <div class="box-No-line9-left-2">
+                        <div class="sp-h">
+                            <span class="sp-head"><b>ID NUMBER:</b></span>
+                        </div>
+                        <div class="sp-v">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-No-line9-left-2">
+                        <div class="sp-h">
+                            <span class="sp-h"><b>ID ISSUED DATE:</b></span>
+                        </div>
+                        <div class="sp-v">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-No-line9-left-2">
+                        <div class="sp-h">
+                            <span class="sp-h"><b>ID EXPIRED DATE:</b></span>
+                        </div>
+                        <div class="sp-v">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row10" style="height:30px">
+
+                <div class="box-No-line10">
+
+                    <div class="box-No-line10-left">
+                        <div class="sp-h"><b>NEXT OF KIN INFORMATION:</b></div>
+                        <div class="sp-v" style="color:#000">{{NEXTOFKININFORMATION}}</div>
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row11">
+
+                <div class="box-No-line11">
+
+                    <div class="box-No-line11-left">
+                        <div class="sp-h"><b>NAME:</b></div>
+                        <div class="sp-v" style="color: #000">{{KinNAME}}</div>
+                        <hr />
+                    </div>
+
+                    <div class="box-No-line11-left">
+                        <div class="sp-h"><b>RELATION:</b></div>
+                        <div class="sp-v">{{RELATION}}</div>
+                        <hr />
+                    </div>
+
+                    <div class="box-No-line11-left">
+                        <div class="sp-h"><b>PHONE NO:</b></div>
+                        <div class="sp-v" style="color:#000">{{KinPHONENO}}</div>
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="app-loan-preview-row10" style="height:30px">
+
+                <div class="box-No-line10">
+                    <div class="box-No-line10-left">
+                        <div class="sp-h"><b>ADDRESS:</b></div>
+                        <div class="sp-v">{{NextKinADDRESS}}</div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row10" style="height:30px">
+
+                <div class="box-No-line10">
+
+                    <div class="box-No-line10-left">
+                        <div class="sp-h"><b>LOAN DETAILS:</b></div>
+                        <div class="sp-v" style="color: #fff;">{{LOANDETAILS}}</div>
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row12" style="height:30px">
+
+                <div class="box-No-line12">
+                    <div class="box-No-line12-left">
+                        <div class="sp-h">
+                            <b>AMOUNT REQUESTED:</b>
+                        </div>
+                        <div class="sp-v">
+                            <ul>
+                                {{RequestAmt}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-No-line12-left">
+                        <div class="sp-h"><b>IN WORDS:</b></div>
+                        <div class="sp-v">{{LoanAmountInWords}}</div>
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row12"  style="height:30px">
+
+                <div class="box-No-line12">
+                    <div class="box-No-line12-left">
+                        <div class="sp-h">
+                            <b>AMOUNT APPROVED:</b>
+                        </div>
+                        <div class="sp-v">
+                            <ul>
+                                {{{{ApprovedAmt}}}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-No-line12-left">
+                        <div class="sp-h"><b>IN WORDS:</b></div>
+                        <div class="sp-v">{{ApprovedLoanAmountInWords}}</div>
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row13" style="height:30px">
+                <div class="box-No-line13">
+                    <div class="box-No-line13-left">
+                        <div class="sp-h"><b>MONTHLY INSTALLMENTS:</b></div>
+                        <div class="sp-v" style="margin-left: 24px;width: 30%;">
+                            {{MONTHLYINSTALLMENTS}}
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="box-No-line13-left" style="margin-left: 3px;width: 20%;">
+                        <div class="sp-h"><b>LOAN TENURE:</b></div>
+                        <div class="sp-v">
+                            {{LOANTENURE}}
+                            <hr />
+                        </div>
+
+                    </div>
+                    <div class="box-No-line13-left" style="margin-left: 3px;width: 20%;">
+                        <div class="sp-h"><b>Interest Rate:</b></div>
+                        <div class="sp-v">
+                            {{INTERESTRATE}}
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="box-No-line13-left" style="margin-left: 3px;width: 30%;">
+                        <div class="sp-h">
+                            <b>DISBURSMENT DATE:</b>
+                        </div>
+                        <div class="sp-v" style="margin-left: 0px;">
+                            <ul>
+                                {{DISBURSMENTDATE}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row14" style="height:30px">
+
+                <div class="box-No-line14">
+                    <div class="box-No-line14-left">
+                        <div class="sp-h"><b>MONTHLY NETPAY:</b></div>
+                        <div class="sp-v" style="margin-left: 24px;width: 30%;">
+                            {{MonthlyNet_Pay_Currency}}
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="box-No-line14-left" style="margin-left: 3px;width: 60%;">
+                        <div class="sp-h"><b>PAYMENT MODE   PAYROLL DEDUCTION:</b></div>
+                        <div class="sp-v" style="width: 10%;">
+                            <input type="checkbox">
+                        </div>
+                        <div class="sp-h" style="width: 20%;"><b>1% MGT FEE:</b></div>
+                        <div class="sp-v" style="width: 10%;">
+                            <input type="checkbox">
+                        </div>
+                        <div class="sp-h" style="width: 20%;"><b>UPFRONT INSURANCE</b></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row12" style="height:30px">
+                <div class="box-No-line12">
+                    <div class="box-No-line12-left" style="width: 28%;">
+                        <div class="sp-h">
+                            <b>ACCOUNT NUMBER:</b>
+                        </div>
+                        <div class="sp-v">
+                            <ul>
+                                {{ACCOUNTNUMBER}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-No-line12-left" style="width: 28%;">
+                        <div class="sp-h"><b>BANK NAME:</b></div>
+                        <div class="sp-v">{{BANKNAME}}</div>
+                        <hr />
+                    </div>
+                    <div class="box-No-line12-left" style="width: 28%;">
+                        <div class="sp-h"><b>ACCOUNT NAME:</b></div>
+                        <div class="sp-v">{{ACCOUNTNAME}}</div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row15">
+                <div class="box-No-line15">
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h"><b>PURPOSE OF LOAN:</b></div>
+                        <div class="sp-v">
+                            {{PURPOSEOFLOAN}}
+                            <hr />
+                        </div>
+                    </div>
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h"><b>CLIENTS SIGNATURE:</b></div>
+                        <div class="sp-v" style="color:white">
+                            123456789
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row15">
+                <div class="box-No-line15">
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h"><b>FOR OFFICE USE ONLY:</b></div>
+                        <div class="sp-v">
+                        </div>
+
+                    </div>
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h" style="color:white"><b>CLIENTS SIGNATURE:</b></div>
+                        <div class="sp-v" style="color:white">
+                            123456789
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row15">
+                <div class="box-No-line15">
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h"><b>KYC BY RELATIONSHIP OFFICER:</b></div>
+                        <div class="sp-v">
+                        </div>
+
+                    </div>
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h" style="color:rgb(0, 0, 0)"><b>TEAM LEAD NAME, Signature Date:</b></div>
+                        <div class="sp-v" style="color:rgb(0, 0, 0)">
+
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row15">
+                <div class="box-No-line15">
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h"><b>NAME, Signature Date:</b></div>
+                        <div class="sp-v">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="box-No-line15-left" style="width: 45%;">
+                        <div class="sp-h" style="color:rgb(0, 0, 0);width: 60%;"><b>FOR AND ON BEHALF OF LAPO MFB:</b></div>
+                        <div class="sp-v" style="color:rgb(0, 0, 0);width: 1%;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row16">
+                <div class="box-No-line16">
+                    <div class="box-No-line16-left">
+                        <div class="sp-h" style="color: #fff;"><b>MONTHLY INSTALLMENTS:</b></div>
+                        <div class="sp-v" style="color: #fff;">
+                            123456789T
+                        </div>
+                    </div>
+
+                    <div class="box-No-line16-right">
+                        <div class="sp-h">
+                            <ul>
+                                <li><input type="checkbox" checked="checked" />Pay Slip</li>
+                                <li><input type="checkbox" checked="checked" />BVN</li>
+                                <li><input type="checkbox" checked="checked" />ID CARD</li>
+                            </ul>
+                        </div>
+                        <div class="sp-v" style="margin-left: 0px;">
+                            <ul>
+                                <li><b>CAPTURED</b></li>
+                                <li><span>Name</span><span style="width: 50px;text-decoration: underline;">...............................................</span></li>
+                                <li><span>Signature</span><span style="width: 50px;text-decoration: underline;">.........................................</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-loan-preview-row15" style="margin-top: 50px;">
+                <div class="box-No-line15">
+                    <div class="box-No-line15-left" style="width: 46%;">
+                        <div class="sp-h"><b>Operations Head Authrization:</b></div>
+                        <div class="sp-v">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="box-No-line15-left" style="width: 46%;">
+                        <div class="sp-h" style="color:rgb(0, 0, 0);width: 60%;"><b>(Name, Signature & Date)</b></div>
+                        <div class="sp-v" style="color:rgb(0, 0, 0);width: 1%;">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-spinner></app-spinner>
+    <router-outlet></router-outlet>
+</body>
+</html>
